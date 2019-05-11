@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^10.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -11,7 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build2": "browserify -t [ babelify --presets [ react ] ] src/index.js -o build/app.js"
   },
   "eslintConfig": {
     "extends": "react-app"
