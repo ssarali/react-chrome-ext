@@ -1,3 +1,15 @@
+## Purpose
+Thinking of a Chrome extension idea that will make using Chrome more efficient for everyday use...
+
+## Configuration 
+React uses JSX syntax for development. However, the browser extensions cannot transpile JSX and will throw an error indicating that an inline script violates the Content Security Policy (CSP). Therefore, I used Babel to transpile the code from JSX to JavaScript so that it can be used as a browser extension. Babel also lets us use ES6+ in older browsers.
+
+- npm install
+- npm install --save-dev @babel/preset-react (required to be used as Chrome extension)
+- more to come
+
+# Auto-generated React information
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
